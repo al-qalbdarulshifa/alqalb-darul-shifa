@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="header">
+    <img src="{{ '/assets/logo.webp' | relative_url }}" alt="Clinic Logo" class="logo">
+    <h1>{{ site.title }}</h1>
+  </header>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <p>📞 For Appointments: <a href="tel:+923457311544">0345 7311544</a></p>
+  </footer>
+</body>
+</html>
